@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>D3L10N/Calculadora</title>
+</head>
+<body>
+<span class="img">
+    <img src="imagenes/a.png" alt="D3L10N" width="360px"
+    height="100px" >
+</span>
+    <br>
+    <div class="contenedorLetra">
+        <span style="--l: 'ca';">Ca</span>
+        <span style="--l: 'lcu';">lcu</span>
+        <span style="--l: 'la';">la</span>
+        <span style="--l: 'do';">do</span>
+        <span style="--l: 'ra';">ra</span>
+        <img src="imagenes/p.png" width="80px">
+    </div>
+  
+  
+    <div class="container">
+        <div id="OperacionRealizada" >0</div>
+        <div id="txtResultado">0</div>
+
+        <div class="fila">
+            <button class="tecla" onclick="operador('1')">1</button>
+            <button class="tecla" onclick="operador('2')">2</button>
+            <button class="tecla" onclick="operador('3')">3</button>
+            <button class="tecla" onclick="operacion('*')">x</button>
+        </div>
+
+        <div class="fila">
+            <button class="tecla" onclick="operador('4')">4</button>
+            <button class="tecla" onclick="operador('5')">5</button>
+            <button class="tecla" onclick="operador('6')">6</button>
+            <button class="tecla" onclick="operacion('-')">-</button>
+        </div>
+
+        <div class="fila">
+            <button class="tecla" onclick="operador('7')">7</button>
+            <button class="tecla" onclick="operador('8')">8</button>
+            <button class="tecla" onclick="operador('9')">9</button>
+            <button class="tecla" onclick="operacion('+')">+</button>
+        </div>
+
+        <div class="fila">
+            <button class="tecla2" onclick="Borrar()"><img src="imagenes/borrar.png" width="40px"></button>
+            <button class="tecla" onclick="operador('0')">0</button>
+            <button class="tecla2" onclick="calculo()">=</button>
+            <button class="tecla" onclick="operacion('/')">/</button>
+        </div>
+
+    </div>
+
+    
+
+    <script src="operaciones.js"></script>
+</body>
+</html>
